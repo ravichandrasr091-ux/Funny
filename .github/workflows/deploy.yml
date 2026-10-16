@@ -30,6 +30,8 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install dependencies
         run: npm ci
+      - name: Validate question packs
+        run: npm run validate:questions
       - name: Run tests
         run: npm test
       - name: Build website

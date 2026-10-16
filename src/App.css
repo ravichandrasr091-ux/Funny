@@ -182,3 +182,43 @@
     border-right-color: var(--border);
   }
 }
+
+.category-tabs {
+  display: flex;
+  gap: 6px;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 2px 2px 7px;
+  scrollbar-color: #464650 transparent;
+  scrollbar-width: thin;
+}
+
+.category-tab {
+  flex: 0 0 auto;
+  min-height: 39px;
+  padding: 0 12px;
+  border: 1px solid #41414c;
+  border-radius: 4px;
+  background: #101016;
+  color: #b8b8c1;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.category-tab:hover {
+  border-color: #85858f;
+  color: #f6f7f2;
+}
+
+.category-tab.selected {
+  border-color: var(--acid);
+  background: rgba(182, 255, 59, .08);
+  color: var(--acid);
+}
+
+.category-hint {
+  color: #92929b;
+  font-size: 10px;
+}

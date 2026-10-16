@@ -1,0 +1,18 @@
+{
+  "purpose": "Manual semantic review log for plausible same-category premise neighbors. Similar wording is flagged by the validator; these pairs were also checked by a human because meaning can overlap without shared words.",
+  "pairs": [
+    {"left":"friends-001","right":"friends-003","decision":"distinct","resolution":"Wrong-chat voice note versus accidental screen-share leak; different medium and visual gag."},
+    {"left":"friends-019","right":"friends-020","decision":"distinct","resolution":"Losing a staring contest versus becoming an unnoticed background cameo; separate fame scenarios."},
+    {"left":"siblings-001","right":"siblings-005","decision":"distinct","resolution":"Cookie smuggling in a textbook versus charging siblings pretzel fees; hiding versus household bargaining."},
+    {"left":"siblings-019","right":"siblings-020","decision":"distinct","resolution":"Hiding the remote at a cliffhanger versus changing channels during credits; separate remote-control antics."},
+    {"left":"family-019","right":"family-020","decision":"distinct","resolution":"Photographing every food plate versus declaring one blurry image official; different photography habits."},
+    {"left":"family-026","right":"family-029","decision":"distinct","resolution":"Gift wrapping nested inside gifts versus saving the gift bag; different festival-prep behaviors."},
+    {"left":"couples-crushes-001","right":"couples-crushes-006","decision":"distinct","resolution":"Rehearsing a message versus sending a date-two calendar invite; private drafting versus over-organized date planning."},
+    {"left":"couples-crushes-027","right":"couples-crushes-028","decision":"distinct","resolution":"Remembering a coffee order versus building a blanket fort; the second prompt was revised to remove the shared tiny-detail premise."},
+    {"left":"couples-crushes-035","right":"couples-crushes-038","decision":"distinct","resolution":"Imagining a wedding after dessert versus scheduling date night like a product launch; different scales and punchlines."},
+    {"left":"brainrot-memes-017","right":"brainrot-memes-022","decision":"distinct","resolution":"Asking AI to apologize to a sandwich versus using AI for a karaoke setlist; different AI scenarios and outcomes."},
+    {"left":"brainrot-memes-035","right":"brainrot-memes-039","decision":"distinct","resolution":"Copying a reflection versus fist-bumping an empty elevator; the shadow/high-five overlap was removed."},
+    {"left":"brainrot-memes-041","right":"brainrot-memes-045","decision":"distinct","resolution":"Using invisibility to dodge group photos versus flying indoors to avoid stairs; separate superpower jokes."},
+    {"left":"brainrot-memes-073","right":"brainrot-memes-074","decision":"distinct","resolution":"Asking a search engine if it is okay versus refreshing a webpage while holding a book; different internet-logic situations."}
+  ]
+}

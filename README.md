@@ -21,6 +21,12 @@ Open the local URL printed by Vite. Verify a production build with `npm run buil
 - Share, copy, and download a branded result image where the browser supports those features.
 - Responsive navigation and mobile/desktop layouts.
 
+## Question packs
+
+The voting prompts live in `src/data/questionBank.json` as five tagged packs: 60 Friends, 60 Siblings, 60 Family, 60 Couples & Crushes, and 80 Brainrot & Memes. Each question has a stable ID and topic tags. `src/data/questionBank.ts` adds category metadata and selects a unique, shuffled set for each room while avoiding adjacent matching topics. The selected records are stored in the room and their IDs are tracked in `questionHistory` as rounds begin.
+
+Run `npm run validate:questions` when editing packs. It checks category minimums, IDs, normalized exact duplicates, word counts, question text, tags, and the manual semantic review log; it also reports high lexical-overlap candidates for human review. Add plausibly similar prompts to `src/data/question-similarity-review.json` with a short resolution. The selection tests confirm no repeats and no adjacent identical topics.
+
 ## Demo-mode boundary
 
 Without Supabase configuration, rooms, votes, and result cards live in `localStorage` in the current browser only. Demo seats are generated examples, not connected people. Opening an invite on another device does not synchronize game state. Result links likewise resolve only in the browser that created the result. The demo is not a multiplayer backend and has not had a security review.
