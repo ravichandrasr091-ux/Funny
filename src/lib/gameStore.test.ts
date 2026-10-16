@@ -8,6 +8,12 @@ const host: Player = { id: 'host-id', nickname: 'Host', avatar: '🐸', isHost: 
 beforeEach(() => localStorage.clear())
 
 describe('local demo room storage', () => {
+  it('rejects room limits below three or above twelve', () => {
+    const create = (players: number) => createRoom({ roomName: 'Test room', nickname: host.nickname, mode: 'likely', rounds: 5, players, host, demoSeats: false })
+    expect(() => create(2)).toThrow('Player limit must be between 3 and 12.')
+    expect(() => create(13)).toThrow('Player limit must be between 3 and 12.')
+  })
+
   it('creates a room with a short code and sample seats', () => {
     const beforeCreate = Date.now()
     const room = createRoom({ roomName: 'Test room', nickname: host.nickname, mode: 'likely', rounds: 5, players: 8, host, demoSeats: true })

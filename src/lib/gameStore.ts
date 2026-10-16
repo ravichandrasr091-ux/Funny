@@ -50,6 +50,9 @@ export function createRoom(input: {
   demoSeats: boolean
   questionCategory?: QuestionCategory
 }): Room {
+  if (!Number.isInteger(input.players) || input.players < 3 || input.players > 12) {
+    throw new RangeError('Player limit must be between 3 and 12.')
+  }
   const rooms = readRooms()
   let code = uniqueRoomCode()
   while (rooms.some((room) => room.code === code)) code = uniqueRoomCode()
