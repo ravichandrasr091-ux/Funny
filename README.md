@@ -1,4 +1,4 @@
-# Who's the Problem?
+# Group Chat Court
 
 A responsive browser website for a chaotic friendship party game. It is a website, not a native mobile app; the layout is designed for phones and desktop browsers, and the React UI can be reused if a mobile app is built later.
 
